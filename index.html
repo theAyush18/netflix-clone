@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">NETFLIX</div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>TV Shows</li>
+      <li>Movies</li>
+      <li>My List</li>
+    </ul>
+    <input type="text" id="search" placeholder="Search...">
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 id="hero-title">Featured Movie</h1>
+      <p id="hero-desc">This is a demo Netflix Clone.</p>
+      <button id="play-btn">▶ Play</button>
+      <button>More Info</button>
+    </div>
+  </header>
+
+  <!-- Movie Rows -->
+  <main>
+    <section class="row">
+      <h2>Popular on Netflix</h2>
+      <div class="row-posters" id="popular-row">
+        <!-- Movie posters injected by JS -->
+      </div>
+    </section>
+
+    <section class="row">
+      <h2>Trending Now</h2>
+      <div class="row-posters" id="trending-row"></div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="movie-modal">
+    <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <h2 id="modal-title"></h2>
+      <iframe id="modal-trailer" src="" frameborder="0" allowfullscreen></iframe>
+      <p id="modal-info"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
